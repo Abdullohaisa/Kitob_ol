@@ -1,0 +1,60 @@
+.bookWorkBtn {
+    display: flex;
+    justify-content: space-between;
+    gap: 41px;
+    .change {
+        background: rgba(44, 48, 51, 1);
+        color: white;
+    }
+
+    button {
+        flex: 1;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        padding: 19px 77px 19px 77px;
+        gap: 6px;
+        border-radius: 4px;
+        background: rgba(217, 217, 217, 1);
+        border: none;
+    }
+}
+
+@media  screen and (max-width:1440px) {
+    .bookWorkBtn {
+        gap: 30px;
+        button {
+            height: 70px;
+        }
+    }
+}
+
+@media  screen and (max-width:800px) {
+    .bookWorkBtn {
+        gap: 20px;
+        button {
+            height: 50px;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .bookWorkBtn {
+        gap: 20px;
+        flex-direction: column;
+        button {
+            height: 50px;
+            flex-direction: row;
+            align-items: center;
+
+            .book {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+
+.div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
+
+    label {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29.05px;
+        text-align: left;
+
+    }
+
+    input {
+        background-color: #f4f4f4;
+        border-radius: 4px;
+        height: 56px;
+        outline: none;
+        border: none;
+        width: 100%;
+
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19.36px;
+        // text-align: left;
+        padding: 0px 20px;
+    }
+
+    .block {
+        background-color: red;
+        top: 5px;
+        right:  0px;
+    }
+
+    .none {
+        background-color: red;
+        top: 5px;
+        right:  -40%;
+    }
+
+    div {
+        position: absolute;
+        padding: 3px 15px;
+        font-size: 15px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: fit-content;
+        width: 40%;
+        color: white;
+        background-color: red;
+        border-radius: 20px 4px 4px 20px  ;
+        letter-spacing: 1px;
+        transition: 1s;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+   .div {
+        gap: 5px;
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 29.05px;
+            } 
+        }
+}
+
+
+
+@media screen and (max-width:650px) {
+   
+       .div {
+        gap: 5px;
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 29.05px;
+            }
+       }
+    }
+

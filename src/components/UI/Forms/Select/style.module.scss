@@ -1,0 +1,49 @@
+
+.div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: .3s;
+
+    label {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29.05px;
+        text-align: left;
+
+    }
+
+    #select {
+        background-color: #f4f4f4;
+        border-radius: 4px;
+        height: 56px;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+   .div {
+        gap: 5px;
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 29.05px;
+            } 
+        }
+}
+
+
+
+@media screen and (max-width:650px) {
+   
+       .div {
+        gap: 5px;
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 29.05px;
+            }
+       }
+    }
+

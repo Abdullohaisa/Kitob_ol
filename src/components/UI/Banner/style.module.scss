@@ -1,0 +1,284 @@
+
+.mainRoot {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 14.4vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+   .mainRoot {
+    padding: 0px 10vw;
+    width: 100%;
+   }
+}
+
+@media screen and (max-width: 1300px) {
+   .mainRoot {
+    padding: 0px 8vw;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .mainRoot {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 ;
+  }
+}
+
+
+.root {
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  background-color: #2C3033;
+  border-radius: 4px;
+
+  .slider {
+    height: 90%;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      transition: .3s;
+      background: #2C3033; 
+      border-radius: 4px;
+
+      .bannerTitle {
+        font-family: Inter;
+        text-align: left;
+        color: #ffffff;
+      }
+
+      button {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        text-align: center;
+        border: none;
+      }
+
+      .img {
+        position: absolute;
+        border-radius: 10px;
+        box-shadow: rgba(157, 157, 157, 0.2) 0px 20px 30px;
+        transition: .3s;
+    }
+    }
+  }
+}
+
+
+@media screen and (min-width:1201px) {
+  .root {
+    height: 500px;
+    margin-bottom: 56px;
+  
+  
+    .slider {
+  
+       .item {
+          height: 500px;
+          padding: 40px;
+  
+          .bannerTitle {
+            max-width: 465px;
+            font-size: 57px;
+            font-weight: 700;
+            line-height: 76.8px;
+          }
+      
+          button {
+            border-radius: 4px;
+            width: 195px;
+            height: 56px;
+            margin-top: 80px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.36px;
+          }
+    
+          .img {
+            top: 100px;
+            right: 55px;
+            height: 60%;  
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+    .root {
+      height: 450px;
+      margin-bottom: 50px;
+
+     .item {
+      height: 450px;
+      padding: 30px;
+
+      .img {
+        top: 100px;
+        right: 55px;
+        height: 55%;  
+    }
+
+      .bannerTitle {
+        width: 440px;
+        font-family: Inter;
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 76.8px;
+      }
+
+      button {
+        border-radius: 6px;
+        width: 195px;
+        height: 56px;
+        margin-top: 80px;
+      }
+     }
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .root {
+      height: 400px;
+
+    .item {
+      height: 400px;
+      padding: 30px 25px;
+
+      .bannerTitle {
+        width: 390px;
+        font-size: 42px;
+        line-height: 65px;
+        font-weight: 700;
+      }
+
+      button {
+        border-radius: 8px;
+        width: 180px;
+        height: 50px;
+        margin-top: 70px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:800px) {
+    .root {
+      height: 350px;
+
+      .item {
+        height: 350px;
+        padding: 25px 30px;
+
+        .bannerTitle {
+          width: 340px;
+          font-size: 35px;
+          line-height: 66px;
+          font-weight: 600;
+      }
+
+      button {
+        width: 180px;
+        height: 50px;
+        margin-top: 60px;
+        border-radius: 10px;
+      }
+    }  
+  }
+}
+
+
+@media screen and (max-width:600px) {
+    .root {
+      height: 275px;
+      border-radius: 0px;
+
+       .item {
+        height: 275px;
+        padding: 25px 20px;
+
+        .bannerTitle {
+          width: 230px;
+          font-size: 35px;
+          line-height: 41px;
+          font-weight: 600;
+      }
+
+      .img {
+        top: 40px;
+        right: 15px;
+        height: 60%;  
+      }
+  
+        button {
+          display: none;
+        }
+       }
+    }
+}
+
+@media screen and (max-width:430px) {
+    .root {
+      height: 180px;
+
+      .item {
+        height: 200px;
+        padding: 24px 16px;
+        display: flex;
+        
+      
+
+        .bannerTitle {
+          width: 193px;
+          font-size: 32px;
+          line-height: 38px;
+          font-weight: 600;
+          margin-top: 20px;
+      }
+        .img {
+          top: 40px;
+          right: 15px;
+          height: 60%;  
+      }
+    }
+  }
+}
+
+@media screen and (max-width:380px) {
+    .root {
+      height: 180px;
+
+      .item {
+        height: 200px;
+        padding: 24px 16px;
+        display: flex;
+        
+      
+
+        .bannerTitle {
+          width: 160px;
+          font-size: 28px;
+          line-height: 40px;
+          font-weight: 600;
+          margin-top: 12px;
+      }
+        .img {
+          top: 50px;
+          right: 22px;
+          height: 56%;
+      }
+    }
+  }
+}

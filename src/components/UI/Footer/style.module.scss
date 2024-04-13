@@ -1,0 +1,111 @@
+.footer {
+    margin-top: 120px;
+    background-color: var(--primary-color);
+    padding: 60px 0px 0px 0px;
+    color: white;
+
+    .topFooter {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        ul:nth-child(1) {
+         img {
+            margin-left: -39px;
+         }
+         li {
+            max-width: 309px;
+            width: 100%;
+            margin-top: 20px;
+         }
+       }
+
+       ul:nth-child(2) {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29.05px;
+        display: flex;
+        align-items: left;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 5px;
+
+        span {
+            width: max-content;
+        }
+       }
+
+       ul:nth-child(3) {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 38.73px;
+        text-align: left;
+
+       }
+    }
+
+    .bottomFooter {
+       min-height: 59.5px;
+       border-top: 1px solid rgba(255, 255, 255, .5);
+       display: flex;
+       align-items: center;
+       
+       
+       ul {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         color: rgba(255, 255, 255, .5);
+         gap: 20px;
+
+        li:nth-child(2) {
+         font-size: 16px;
+         font-weight: 300;
+         line-height: 19.36px;
+        }
+
+
+         span {
+            color: white;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 900;
+            line-height: 19.36px;
+            font-variation-settings: 'slnt' -9;
+
+         }
+       }
+    }
+
+    
+}
+
+@media screen and (max-width:500px) {
+
+   .topFooter {
+      flex-direction: column;
+      ul:nth-child(2) {
+         flex-direction: column;
+         
+         span {
+            text-align: left;
+         }
+      }
+   }
+
+
+
+   .bottomFooter {
+     padding: 20px 0px ;
+
+     ul {
+      gap: 7px;
+     }
+   }
+}

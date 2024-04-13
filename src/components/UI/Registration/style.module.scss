@@ -1,0 +1,215 @@
+
+
+.register {
+    margin-top: 45px;
+
+    .registerPage {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: silver;
+    
+        .icon {
+            transition: .4s;
+        }
+    
+        .icon:hover, .icon:active {
+          transform: scale(1.5);
+          border-radius: 5px;
+          color: black;
+        }
+    
+        span {
+            color: black;
+        }
+        
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 33.89px;
+        text-align: left;
+    }
+
+    .formBox {
+        background-color: white;
+        border-radius: 4px;
+        padding: 110px 40px 40px 40px ;
+        margin-top: 10px;
+        position: relative;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 100px ;
+
+        .btnBox {
+            display: flex;
+            align-items: flex-end;
+
+            button {
+                width: 100%;
+                height: 56px;
+                border-radius: 4px;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24.2px;
+                text-align: center;
+                color: #FFFFFF;
+                background: #2C3033;
+                border: none;
+
+            }
+        }
+        
+        .userProfile {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #D9D9D9;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 3px rgb(255, 255, 255) , 0px 0px 0px 2px silver , 0px 0px 10px 3px #dfdfdf ;
+
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .5s ease;
+
+            .userIcon {
+                transform: scale(1.6);
+            }
+       }
+
+       .userProfile:hover {
+        width: 400px;
+        height: 100px;
+        border: 0px;
+        box-shadow: 0px 0px 0px 3px rgb(255, 255, 255), 0px 0px 0px 6px #2C3033 , 0px 0px 0px 6px #eeeeee ;
+        border-radius: 20px;
+        background-color: #2C3033;
+        color: #ffffff;
+        
+       }
+
+}}
+
+
+@media screen and (max-width:1300px) {
+    .register {
+        margin-top: 35px;
+    
+        p {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 33.89px;
+        }
+    
+        .formBox {
+            border-radius: 4px;
+            padding: 30px;
+            margin-top: 0px;
+            padding: 100px 30px 30px 30px ;
+            gap: 40px 70px ;
+
+            .btnBox {
+                display: flex;
+                align-items: flex-end;
+
+                button {
+                    width: 100%;
+                    height: 56px;
+                    border-radius: 4px;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24.2px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    background: #2C3033;
+                    border: none;
+    
+                }
+            }
+
+        }
+    }
+}
+    
+
+
+
+
+@media screen and (max-width:900px) {
+   .register {
+
+    ul {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+     }
+
+    .formBox {
+        border-radius: 0px;
+        margin-top: 30px;
+        padding: 100px 0px 30px 0px ;
+        border-top: 2px solid silver;
+        gap: 30px 40px ;
+
+        .userProfile {
+            border: 10px solid #ffffff;
+            box-shadow: 0px 13px 10px 1px silver;
+        }
+    }
+  }
+}
+
+
+@media screen and (max-width:650px) {
+.register {
+    margin-top: 20px;
+
+    p {
+        font-size: 16px;
+    }
+
+    .formBox {
+        border-radius: 0px;
+        margin-top: 90px;
+        padding: 80px 0px 30px 0px ;
+        border-top: 2px solid silver;
+        grid-template-columns: repeat(1, 1fr);
+
+
+        .userProfile {
+            box-shadow: 0px 0px 0px 10px rgb(255, 255, 255) , 0px 0px 0px 6px #eeeeee ;
+            border: none;
+        }
+
+        .userProfile:hover {
+            width: 200px;
+            height: 130px;
+            border: 0px;
+            box-shadow: 0px 0px 0px 10px rgb(255, 255, 255) , 0px 0px 0px 10px #eeeeee ;
+            
+        }
+    }
+ }
+}

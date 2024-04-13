@@ -1,0 +1,25 @@
+
+
+#salom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ikki ustun */
+    align-items: center;
+    justify-content: center;
+    gap: 20px 60px; 
+}
+
+
+
+@media screen and (max-width:1300px) {
+    #salom {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
+
+@media screen and (max-width:650px) {
+    #salom {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
