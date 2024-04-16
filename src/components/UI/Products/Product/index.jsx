@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router'; // useRouter funksiyasini import qilamiz
 import s from './style.module.scss'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';

@@ -1,8 +1,8 @@
 
 .mainRoot {
-    width: 312px;
+    width: 100%;
     border-radius: 4px;
-    height: 260px;
+    height: 100%;
   }
   
  
@@ -16,7 +16,7 @@
 
   
     .slider {
-      height: 92%;
+      height: 100%;
       border-radius: 4px;
   
       .item {
@@ -38,43 +38,25 @@
   }
   
   
-  // @media screen and (min-width:1201px) {
-  //   .root {
-  //     height: 500px;
-    
-    
-  //     .slider {
-    
-  //        .item {
-  //           height: 500px;
-  //           padding: 40px;
-    
-  //           .bannerTitle {
-  //             max-width: 465px;
-  //             font-size: 57px;
-  //             font-weight: 700;
-  //             line-height: 76.8px;
-  //           }
-        
-  //           button {
-  //             border-radius: 4px;
-  //             width: 195px;
-  //             height: 56px;
-  //             margin-top: 80px;
-  //             font-size: 16px;
-  //             font-weight: 400;
-  //             line-height: 19.36px;
-  //           }
-      
-  //           .img {
-  //             top: 100px;
-  //             right: 55px;
-  //             height: 60%;  
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  @media screen and (max-width:900px) {
+    .root {
+       border-radius: 20px 20px 5px 5px ;
+       border-bottom: 5px;
+        overflow: hidden;
+      .slider {
+        border-radius: 20px 20px 5px 5px ;
+        border-bottom: 5px;
+         .item {
+          border-radius: 20px 20px 5px 5px ;
+          border-bottom: 5px;
+            .img {
+              border-radius: 10px;
+              border-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
   
   
   // @media screen and (max-width:1200px) {

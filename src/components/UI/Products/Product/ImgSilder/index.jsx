@@ -33,7 +33,7 @@ function CardSlider() {
     },
     {
       img: '/images/book.svg'
-    }
+    },
   ]
 
 
@@ -53,20 +53,20 @@ function CardSlider() {
         <div
         className={`${s.slickDote} ${i === currentSlide ? s.activeDot : ''}`}
           style={{
-            width: "5px",
-            height: "5px",
-            borderRadius: "50%",
+            width: "100%",
+            height: "2px",
+            borderRadius: "1px",
             background: "white",
             backgroundColor: "white",
-            transform: i === currentSlide ? "scale(2)" : "",
-            backgroundColor: i === currentSlide ? "white" : "silver", 
+            transform: i === currentSlide ? "scale(1)" : "",
+            backgroundColor: i === currentSlide ? "black" : "silver", 
             transition:".3s",
           }}
         ></div>
       );
     },
     appendDots: (dots) => (
-      <ul  className={s.customDots}>
+      <ul style={{width:"100%",}}  className={s.customDots}>
         {dots.map((dot, index) => (
           <li>
             {dot}
