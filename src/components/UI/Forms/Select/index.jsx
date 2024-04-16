@@ -8,7 +8,8 @@ export default function Selects({
   value,
   label,
   search,
-  register
+  register,
+  id,
 }) {
   const customStyles = {
     control: (provided, state) => ({
@@ -45,9 +46,9 @@ export default function Selects({
 
 
 const option = [
-  { value: "iymon", label: "Baxtiyor Oila" },
-  { value: "hadis va hayot", label: "Hadis va Hayot" },
-  { value: "Ochiq xat", label: "Ochiq xat" },
+        { value: "iymon", label: "Baxtiyor Oila" },
+        { value: "hadis va hayot", label: "Hadis va Hayot" },
+        { value: "Ochiq xat", label: "Ochiq xat" },
 ];
 
 
@@ -55,10 +56,11 @@ const option = [
     <div className={s.div}>
       <label>{label}</label>
       <Select
+        id={id}
         name={name}
         value={value}
         onChange={onChange}
-        id={s.select}
+        // id={s.select}
         styles={customStyles}
         options={option}
         placeholder={placeholder}
@@ -66,14 +68,9 @@ const option = [
         isClearable={true}
         isSearchable={search}
         // {...register}
-        inputRef={{...register}}
+     
       />
     </div>
   );
 }
 
-// const option = [
-//   { value: "iymon", label: "Baxtiyor Oila" },
-//   { value: "hadis va hayot", label: "Hadis va Hayot" },
-//   { value: "Ochiq xat", label: "Ochiq xat" },
-// ];

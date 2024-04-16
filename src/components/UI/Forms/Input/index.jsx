@@ -11,11 +11,13 @@ const Input = ({
       register,
       error,
       errorText,
+      id,
 }) => {
   return (
     <div className={s.div}>
       <label>{label}</label>
       <input
+        id={id}
         name={name}
         onChange={onChange}
         type={type}

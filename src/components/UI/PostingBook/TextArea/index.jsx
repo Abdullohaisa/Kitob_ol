@@ -32,7 +32,7 @@ const TextAreaPB = ({register, length}) => {
                     maxLength="9000"
                     placeholder="O’zingizni shu e’lonni ko’rayotgan odam sifatida tavsif yozing!"
                     onChange={handleTextChange1}
-                    value={text1}
+                    // value={text1}
 
                     name={"description1"}
                     {...register("description1") }

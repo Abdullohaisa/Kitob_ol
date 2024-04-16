@@ -14,39 +14,41 @@ import { FlashAuto } from "@mui/icons-material";
 const PostingBooks = () => {
    const { register, handleSubmit,  formState : {errors}, } = useForm({
 
-    defaultValues: {
-      bookName: "",
-      category: "",
-      author: "",
-      bookId: "",
-      bookLang: "",
-      typeWriting: "",
-      translator: "",
-      bookPage: "",
-      publisher: "",
-      bookYear: "",
-      bookPrice: "",
-      paperFormat: "",
-      bookCover: "",
-      status: "",
-      description1: "",
-      description2: "",
-      address:"",
-      email: "",
-      phoneNumber: "",
+    // defaultValues: {
+    //   bookName: "",
+    //   category: "",
+    //   author: "",
+    //   bookId: "",
+    //   bookLang: "",
+    //   typeWriting: "",
+    //   translator: "",
+    //   bookPage: "",
+    //   publisher: "",
+    //   bookYear: "",
+    //   bookPrice: "",
+    //   paperFormat: "",
+    //   bookCover: "",
+    //   status: "",
+    //   description1: "",
+    //   description2: "",
+    //   address:"",
+    //   email: "",
+    //   phoneNumber: "",
 
-    },
+    // },
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const func = (data) => {
+   data.preventDefault()
+   const [inp1, inp2] = data.target.querySelectorAll("#postingBookForm")
+   console.log(inp1, inp2)
   };
   return (
     <div className="container">
 
-     <form onSubmit={handleSubmit(onSubmit)}> 
+     <form onSubmit={(e)=>func(e)}> 
 
-     <div className={s.posting}>
+    <div className={s.posting}>
         <ul>
           <li className={s.postingPage}>
             <Link href="/">
@@ -60,9 +62,9 @@ const PostingBooks = () => {
         </ul>
 
         <div className={s.formBox}>
-          <FormPostingBook registers={register} />
+          <FormPostingBook errors={errors} registers={register} />
         </div>
-      </div>
+    </div>
 
       {/* <div className={s.posting}>
       <div className={s.formBox}>
@@ -70,11 +72,11 @@ const PostingBooks = () => {
       </div>
       </div> */}
 
-      <div className={s.posting}>
+      {/* <div className={s.posting}>
       <div className={s.formBox}>
        <TextAreaPB register={register}/>
       </div>
-      </div>
+      </div> */}
 
       <div className={s.posting}>
         <div className={s.formBox}>
@@ -82,7 +84,7 @@ const PostingBooks = () => {
             <p>Manzilni kiriting*</p>
               <br />
               <Input 
-                  label=" "
+                  id='postingBookForm'
                   placeholder='Shahar yoki viloyat' 
                   name='address'
                   register={{
@@ -95,7 +97,7 @@ const PostingBooks = () => {
         </div>
       </div>
 
-      <div className={s.posting}>
+      {/* <div className={s.posting}>
         <div className={s.formBox}>
             <div className={s.publisherData}>
               <p>Aloqa uchun malumotlar</p>
@@ -133,13 +135,13 @@ const PostingBooks = () => {
                  /> <br />
             </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={s.posting}>
         <div className={s.formBox}>
           <div className={s.buttonBox}>
             <button type="button">Tekshirib Ko'rish</button>
-            <button style={{backgroundColor:"#2C3033", color:"white"}}>E'lonni joylashtirish</button>
+            <button>E'lonni joylashtirish</button>
           </div>
         </div>
       </div>

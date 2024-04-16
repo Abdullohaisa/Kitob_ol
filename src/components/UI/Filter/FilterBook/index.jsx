@@ -10,7 +10,7 @@ const FilterBook = () => {
   }
   return (
     (filter ? (
-      <div className={s.filterBook}>
+      <div id="filterBook" className={s.filterBook}>
       <p onClick={open}>Filter</p>
       <FormFilter />
       </div>
