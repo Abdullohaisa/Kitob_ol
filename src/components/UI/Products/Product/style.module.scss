@@ -138,9 +138,11 @@
             transition: .3s;
         }
 
-        button:hover,
-        button:active {
-         background-color: white;
+        button:hover
+        // button:active 
+        {
+         background-color: white !important;
+         color: red !important;
     }
 
 }
