@@ -39,8 +39,8 @@ function CardSlider() {
 
   let settings = {
     dots: true,
-    infinite: true,
-    autoplay: true,
+    infinite: false,
+    autoplay: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 300,

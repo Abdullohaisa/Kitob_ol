@@ -44,6 +44,7 @@
        border-bottom: 5px;
         overflow: hidden;
       .slider {
+       height: 99%;
         border-radius: 20px 20px 5px 5px ;
         border-bottom: 5px;
          .item {
@@ -59,38 +60,12 @@
   }
   
   
-  // @media screen and (max-width:1200px) {
-  //     .root {
-  //       height: 450px;
-  //       margin-bottom: 50px;
-  
-  //      .item {
-  //       height: 450px;
-  //       padding: 30px;
-  
-  //       .img {
-  //         top: 100px;
-  //         right: 55px;
-  //         height: 55%;  
-  //     }
-  
-  //       .bannerTitle {
-  //         width: 440px;
-  //         font-family: Inter;
-  //         font-size: 55px;
-  //         font-weight: 700;
-  //         line-height: 76.8px;
-  //       }
-  
-  //       button {
-  //         border-radius: 6px;
-  //         width: 195px;
-  //         height: 56px;
-  //         margin-top: 80px;
-  //       }
-  //      }
-  //     }
-  // }
+  @media screen and (max-width:500px) {
+    .slider {
+      height: 98% !important;
+      border-radius: 4px;
+    }
+  }
   
   
   // @media screen and (max-width:1000px) {
