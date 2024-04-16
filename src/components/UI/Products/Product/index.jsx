@@ -9,7 +9,7 @@ const Product = () => {
   const singlePage = (e) => {
     e.stopPropagation(); 
 
-    alert("awd"); 
+    // alert("awd"); 
   };
 
   const handleProductClick = () => {
