@@ -53,12 +53,11 @@ function CardSlider() {
         <div
         className={`${s.slickDote} ${i === currentSlide ? s.activeDot : ''}`}
           style={{
-            width: "100%",
+            width: "25px",
             height: "2px",
             borderRadius: "1px",
-            background: "white",
-            backgroundColor: "white",
-            transform: i === currentSlide ? "scale(1)" : "",
+            background: "silver",
+            transform: i === currentSlide ? "scale(1)" : "scale()",
             backgroundColor: i === currentSlide ? "black" : "silver", 
             transition:".3s",
           }}

@@ -13,7 +13,7 @@ const Product = () => {
   };
 
   const handleProductClick = () => {
-    // router.push('/single-book'); 
+    router.push('/single-book'); 
   };
 
   return (
